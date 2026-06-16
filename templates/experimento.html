@@ -1,0 +1,68 @@
+<!---CÓDIGO DE EXPORTACIÓN DE MATERIAL Y RANDOMIZACIÓN-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iconicidad: Experimento</title>
+
+    <!-- Tema  Simple de Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css">
+
+    <!-- Google Fonts: Permanent Marker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/experimento.css') }}">
+
+</head>
+<!-- Código del experimento -->
+
+<body>
+
+<h2>Escucha y elige</h2>
+
+<!-- BARRA DE PROGRESO -->
+<div class="progress">
+  <div class="progress-bar bg-dark"
+       role="progressbar"
+       style="width: {{ progress }}%;"
+       aria-valuenow="{{ progress }}"
+       aria-valuemin="0"
+       aria-valuemax="100">
+  </div>
+</div>
+
+<!-- AUDIO -->
+<audio controls> <!--no se reproduce solo-->
+    <source src="{{ url_for('static', filename='audio_files/' ~ item.audio_material) }}">
+    <!--llamamos a la url donde están los archivos de audio y asociamos con el item del csv-->
+    <!-- símbolo ~ concatena cadenas de texto -->
+</audio>
+
+<form method="post" action="/respuesta">
+    <!--se envían los datos al backend-->
+    <!-- flask los recibe en request.form-->
+    <input type="hidden" name="index" value="{{ index }}">
+    <input type="hidden" name="id_item" value="{{ item.id_item }}">
+    <input type="hidden" name="sign_esp" value="{{ item.sign_esp }}">
+
+    <!-- OPCIONES -->
+    <!-- bucle que itera sobre las opciones -->
+    <div class="options-grid">
+        {% for opcion in opciones %}
+            <button type="submit"
+                    name="respuesta"
+                    value="{{ opcion }}"
+                    class="btn btn-outline-dark btn-block">
+                {{ opcion.split(',')[0] }}
+                <!-- value= {{ opcion }} == click en la opcion + significado del usuario -->
+                <!--separo y paso el primer índice = opt_a/b/c/d de opciones (en el main) -->
+            </button>
+        {% endfor %}
+    </div>
+
+</form>
+</body>
+</html>

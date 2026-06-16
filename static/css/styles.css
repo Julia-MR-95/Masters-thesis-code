@@ -1,0 +1,367 @@
+/* ===== ESTILOS GENERALES (para todas las páginas) ===== */
+/* Reset básico para evitar márgenes raros del navegador
+ que los tamaños sean predecibles. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrar el contenido verticalmente y horizontalmente */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* TODOS los títulos */
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem; /* 32px */
+}
+
+/* === CONTAINERS === */
+/* Asegurar que el container de Bootstrap se centre */
+/* Aplica al container BASE */
+.container {
+/*max-width: 45rem; /* 800px */
+    background-color: white;
+    padding: 2.5rem; /* 40px */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+/*.container { outline: 0.5rem solid red !important; } */
+/*para comprobar que los datos están dentro del container*/
+
+/* ===== ESTILOS PARA PÁGINAS ===== */
+/* CONTAINER FORMULARIO texto de párrafos, labels y textos del formulario */
+.container.formulario {
+    max-width: 45rem; /* 720px */
+    padding-left: 4rem; /* 64px */
+    padding-right: 4rem; /* 64px */
+    font-size: 1rem; /* 16px */
+}
+
+.formulario p,
+.formulario label,
+.formulario .form-text {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+}
+
+/* === PRESENTACIÓN E INSTRUCCIONES === */
+.container.presentacion,
+.container.instrucciones {
+    max-width: 42rem; /* 672px - container más estrecho que los 800px del formulario */
+    padding: 2.5rem; /* 40px */
+    padding-left: 4rem; /* 64px */
+    padding-right: 4rem; /* 64px */
+   font-size: 1.125rem /* 18 px*/
+
+}
+
+.presentacion p,
+.instrucciones p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+    margin-bottom: 1rem; /* 16px - espaciado entre párrafos */
+}
+
+/* ===== INSTRUCCIONES - LISTA ===== */
+/* Igualar ancho visual de la lista con los párrafos */
+.lista {
+    max-width: 42rem; /* 672px - ancho del bloque igual a párrafos */
+    margin: 1.5rem auto; /* 24px arriba/abajo - centra el bloque */
+}
+
+/* Quitamos estilos por defecto */
+.lista ul {
+    list-style-type: disc; /*bullet points nativos*/
+    padding-left: 2rem; /*32px*/
+    margin: 0;
+}
+
+/* Cada ítem con bullet alineado */
+.lista ul li {
+    margin-bottom: 0.75rem; /* 12px - espacio entre items */
+    line-height: 1.6; /* altura de línea consistente */
+    font-size: 1rem; /* 16 px */
+    padding-left: 0.5rem /*8px después del bullet point*/
+ }
+
+/* BULLET MANUAL */
+/* Asegurar que strong no rompa el layout */
+.lista ul li strong {
+    font-weight: bold;
+}
+
+.lista ul li::marker {
+    font-size: 1.5rem; /* 24px */
+    color: inherit;
+}
+
+/* === FORMULARIO === */
+/* FORMULARIO Inputs y selects ESCRITOS */
+.formulario input,
+.formulario select,
+.formulario .form-control,
+.formulario .form-select {
+    font-size: 0.9rem; /* 14.4px */
+    padding: 1rem; /* 16px - También aumentamos el padding para mejor lectura */
+}
+
+/* PLACEHORLDERS ESCRITOS */
+.formulario input::placeholder,
+.formulario select::placeholder {
+    font-size: 0.9rem; /* 14.4px */
+}
+
+/* === SELECT2 === */
+/* Para los dropdowns de Select2 y que todos tengan el mismo ancho */
+.select2-container {
+    width: 100% !important;
+    max-width: 100% !important; /* Asegurar que no se expanda más de lo necesario */
+}
+
+/* Cómo se ve la caja del dropdown cerrada */
+.select2-container .select2-selection {
+    font-size: 0.9rem; /* 14.4px - Tamaño del campo cerrado */
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+    min-height: 2.5rem; /* 40px - Altura mínima */
+    display: flex !important;
+    align-items: center;
+    width: 100% !important; /* Asegurar que ocupe todo el ancho */
+}
+
+
+/* CONTAINER específico selección SIMPLE */
+.select2-container .select2-selection__rendered {
+    font-size: 0.9rem; /* 14.4px */
+    line-height: 1.4;
+    padding-left: 0 !important;
+    padding-right: 2rem !important; /* espacio para la flecha */
+    width: 100% !important; /* ocupa todo el ancho disponible */
+}
+
+/* PLACEHOLDER específico para select SIMPLE */
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: 0.9rem !important; /* 14.4px */
+    color: #999 !important;
+    line-height: 1.4 !important;
+}
+
+/* CONTAINER específico  selección MÚLTIPLE */
+.select2-container--default .select2-selection--multiple {
+    /*padding: 0.375rem 0.5rem !important; /* 6px 8px */
+    /*min-height: 2.5rem !important; /* 40px */
+    text-align: left !important;
+    /*display: flex !important /* AÑADIDO */
+    /*width: 100% !important /* AÑADIDO*/
+    margin-left: 0 !important /* AÑADIDO*/
+}
+
+/* PLACEHOLDER para select MÚLTIPLE */
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+    font-size: 0.9rem !important; /* 14.4px */
+    color: #999 !important;
+    line-height: 1.4 !important;
+    margin-top: 0.25rem !important; /* 4px */
+    margin-left: 0 !important; /* elimina margen izquierdo */
+    padding-left: 0.5 !important; /* añadido padding izquierdo */
+    text-align: left !important;
+}
+
+/* Las opciones "chips" seleccionadas en el múltiple */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    font-size: 0.875rem; /* 14px */
+    padding: 0.25rem 0.5rem; /* 4px 8px */
+    margin: 0.25rem !important; /* 4px */
+    text-align : left !important;
+}
+
+/* El área de renderizado debe estar alineada a la izquierda */
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding-left: 0.5 !important; /* añadido  */
+    text-align: left !important;
+    display: block !important; /* para que respete el text-align */
+    width: 100% !important /* AÑADIDO */
+}
+
+
+/* Cómo se ven las opciones desplegadas */
+.select2-results__option {
+    font-size: 0.9rem; /* 14.4px - tamaño de las opciones del dropdown */
+    padding: 0.625rem; /* 10px */
+    line-height: 1.4; /* mejora la alineación vertical */
+}
+
+/* Ajuste específico para la flecha del dropdown */
+.select2-container .select2-selection__arrow {
+    height: 2.5rem; /* 40px */
+}
+
+
+/* === BOTONES === */
+/* Botón formulario */
+.formulario .btn {
+    font-size: 1.125rem; /* 18px */
+}
+
+/* Botón general */
+.btn {
+    font-size: 1rem; /* 16px */
+    padding: 0.75rem 1.5rem;
+}
+
+/* === CUERPO TEXTO ==== */
+
+/* Centrar todo el contenido del FORMULARIO */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.participante {
+    width: 100%;
+    max-width: 31.25rem; /* 500px */
+}
+
+.participante-header {
+    width: 100%;
+}
+
+
+/* Mensaje de fin de formulario */
+.adios {
+    width: 100%;
+    text-align: center;
+    font-size: 5rem; /* 80px */
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* TABLETS (hasta 768px) */
+@media (max-width: 48rem) { /* 768px */
+    body {
+        padding: 1.25rem; /* 20px */
+    }
+
+    .container {
+        padding: 1.875rem; /* 30px */
+        padding-left: 2rem; /* 32px */
+        padding-right: 2rem; /* 32px */
+    }
+
+    /* Font-size para formulario en tablets */
+    .container.formulario {
+        font-size: 0.9rem; /* 14.4px */
+    }
+
+    /* Font-size para presentación e instrucciones en tablets */
+    .container.presentacion,
+    .container.instrucciones {
+        font-size: 1rem; /* 16px */
+    }
+
+    /* h1 más pequeño en tablets */
+    h1 {
+        font-size: 1.75rem; /* 28px */
+        margin-bottom: 1.5rem; /* 24px */
+    }
+
+    /* Inputs más pequeños en tablets */
+    .formulario input,
+    .formulario select,
+    .formulario .form-control,
+    .formulario .form-select {
+        font-size: 0.875rem; /* 14px */
+        padding: 0.75rem; /* 12px */
+    }
+
+    /* LISTA */
+    .lista {
+        max-width: 100%; /* ocupa todo el ancho disponible */
+        margin: 1.25rem auto; /* 20px */
+    }
+
+    .lista ul li {
+        gap: 0.625rem; /* 10px - menos espacio */
+        margin-bottom: 0.625rem; /* 10px */
+    }
+
+    /* Botones más pequeños en tablets */
+    .container .btn {
+        font-size: 1rem; /* 16px */
+        padding: 0.625rem 1.25rem; /* 10px 20px */
+    }
+}
+
+/* MÓVILES (hasta 480px) */
+@media (max-width: 30rem) { /* 480px */
+    body {
+        padding: 0.625rem; /* 10px */
+    }
+
+    .container {
+        padding: 1.25rem; /* 20px */
+    }
+
+    /* Font-size para formulario en móviles */
+    .container.formulario {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    /* Font-size para presentación e instrucciones en móviles */
+    .container.presentacion,
+    .container.instrucciones {
+        font-size: 0.9375rem; /* 15px */
+    }
+
+    /* h1 más pequeño en móviles */
+    h1 {
+        font-size: 1.5rem; /* 24px */
+        margin-bottom: 1.25rem; /* 20px */
+    }
+
+    /* Inputs más pequeños en móviles */
+    .formulario input,
+    .formulario select,
+    .formulario .form-control,
+    .formulario .form-select {
+        font-size: 0.8125rem; /* 13px */
+        padding: 0.625rem; /* 10px */
+    }
+
+    /* LISTA */
+    .lista {
+        margin: 1rem auto; /* 16px */
+    }
+
+    .lista ul li {
+        gap: 0.5rem; /* 8px */
+        margin-bottom: 0.5rem; /* 8px */
+        font-size: 0.9375rem; /* 15px - texto más pequeño */
+    }
+
+    .lista ul li::before {
+        font-size: 1.2rem; /* 19.2px - bullet más pequeño */
+        margin-top: 0.1rem; /* 1.6px */
+    }
+
+    /* Botones más pequeños en móviles */
+    .container .btn {
+        font-size: 0.9375rem; /* 15px */
+        padding: 0.5rem 1rem; /* 8px 16px */
+    }
+
+    /* Párrafos con menos margen en móviles */
+    .presentacion p,
+    .instrucciones p {
+        margin-bottom: 0.75rem; /* 12px */
+    }
+}
+

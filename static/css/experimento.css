@@ -1,0 +1,72 @@
+/* nombre de la clase html igual en el css */
+
+/* TODO EL CUERPO DE LA PAGINA */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.875rem; /* 30px */
+  box-sizing: border-box;
+}
+
+/* HEADER (título + barra) */
+/* Como no hay .header-section, estilizamos en h2 directamente */
+h2 {
+  margin-bottom: 0.9375rem; /* 15px */
+}
+
+/* Barra de progreso centrada bajo el título */
+.progress {
+  width: 100%;
+  max-width: 25rem; /* 400px */
+  height: 0.625rem; /* 10px */
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+/* Asegura que el relleno ocupe la altura completa */
+.progress-bar {
+  height: 100%;
+}
+
+/* AUDIO */
+audio {
+  display: block;
+  margin: 0 auto 2.5rem auto; /* 40px */
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* GRID de opciones: 2 arriba + 2 abajo (2x2) */
+.options-grid{
+  display: grid;
+  width: 100%;
+  max-width: 20rem;              /* ajusta el tamaño total del bloque */
+  grid-template-columns: repeat(2, 10rem);
+  grid-auto-rows: 5rem;       /* 60px */
+  gap: 1.25rem;                  /* 20px */
+  justify-items: stretch;        /* clave */
+  align-items: stretch;          /* clave */
+}
+
+/* Botones: ocupar toda la celda y centrado perfecto */
+.options-grid > button.btn{
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 0 !important;         /* quita padding Bootstrap que rompe el “cuadrado” */
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+/*.options-grid { outline: 2.25rem solid red !important; }*/
+/* línea para comprobar el espacio que ocupa el grid */

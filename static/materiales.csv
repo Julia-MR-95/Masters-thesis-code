@@ -1,0 +1,20 @@
+id,id_item,audio_material,sign_esp,opt_a,sign_a,opt_b,sign_b,opt_c,sign_c,opt_d,sign_d
+1,ITEM01,si.mp3,cerca,yo,cerca,tú,medio,aquí,cerca,ahí,medio
+2,ITEM02,na.mp3,medio,tú,medio,ella/él,lejos,eso/ese,medio,aquel,lejos
+3,ITEM03,bu.mp3,lejos,él/ella,lejos,yo,cerca,allí,lejos,aquí,cerca
+4,ITEM04,sipi.mp3,cerca,esto/este,cerca,aquello,lejos,yo,cerca,él/ella,lejos
+5,ITEM05,sapa.mp3,medio,eso/ese,medio,esto/este,cerca,ahí,medio,aquí,cerca
+6,ITEM06,supu.mp3,lejos,aquello,lejos,eso/ese,medio,él/ella,lejos,tú,medio
+7,ITEM07,siki.mp3,cerca,hoy,cerca,mañana,medio,ahora,cerca,después,medio
+8,ITEM08,ma.mp3,medio,ayer,medio,hoy,cerca,antes,medio,ahora,cerca
+9,ITEM09,ba.mp3,medio,mañana,medio,hoy,cerca,ahí,medio,aquí,cerca
+10,ITEM10,mabu.mp3,lejos,anteayer,lejos,hoy,cerca,aquello,lejos,esto/este,cerca
+11,ITEM11,babu.mp3,lejos,pasado mañana,lejos,mañana,medio,anteayer,lejos,ayer,medio
+12,ITEM12,tisi.mp3,cerca,ahora,cerca,luego,lejos,aquí,cerca,allí,lejos
+13,ITEM13,nala.mp3,medio,antes,medio,ahora,cerca,mañana,medio,hoy,cerca
+14,ITEM14,mubu.mp3,medio,después,medio,ahora,cerca,ayer,medio,hoy,cerca
+15,ITEM15,pit.mp3,cerca,pronto,cerca,tarde,lejos,hoy,cerca,anteayer,lejos
+16,ITEM16,bumu.mp3,lejos,tarde,lejos,pronto,cerca,allí,lejos,aquí,cerca
+17,ITEM17,siti.mp3,cerca,aquí,cerca,allí,lejos,este/esto,cerca,aquel,lejos
+18,ITEM18,sata.mp3,medio,ahí,medio,aquí,cerca,tú,medio,yo,cerca
+19,ITEM19,sutu.mp3,lejos,allí,lejos,aquí,cerca,aquel,lejos,esto/este,cerca

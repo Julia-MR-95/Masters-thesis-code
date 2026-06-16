@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iconicidad: Instrucciones</title>
+
+    <!-- Tema  Simple de Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css">
+
+    <!-- Google Fonts: Permanent Marker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+
+    <main class="container instrucciones p-4">
+        <h1>Instrucciones para los experimentos</h1>
+
+        <div class="lista">
+            <p>Te explicamos qué tienes que hacer.</p>
+            <p>En este experimento vas a escuchar <b>varios audios, cada uno con una (1) palabra</b>, y tendrás que elegir entre <b>varios significados para cada uno</b>.</p>
+            <p>Puedes <b>reproducir cada audio dos (2) veces</b>.</p>
+            <p>La respuesta se elige clicando con el ratón o tocando la pantalla.</p>
+            <!-- usamos <b></b> en vez de <strong></strong> porque no queremos darle significado semántico extra
+            (no hay buscadores que dependan de este contenido)-->
+                <ul>
+                    <li>Responde con sinceridad.</li>
+                    <li>No hay respuestas correctas o incorrectas.</li>
+                    <li>No lo pienses mucho y elige lo primero que te parezca bien.</li>
+                    <li>Las opciones se repiten, así que no te preocupes si ves la misma opción en diferentes ocasiones.</li>
+                    <li>Si tienes dudas <strong>antes de comenzar</strong> el experimento, puedes realizarnos cualquier consulta.</li>
+                </ul>
+            <p>Cuando estés listo, pulsa el botón para continuar.</p>
+        </div>
+
+        <!-- CONTINUAR -->
+        <a href="{{ url_for('experimento', i=0) }}" class="btn btn-dark btn-block">
+            Continuar
+        </a>
+    </main>
+</body>
+</html>

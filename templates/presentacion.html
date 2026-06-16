@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iconicidad: Introducción</title>
+
+    <!-- Tema  Simple de Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css">
+
+    <!-- Google Fonts: Permanent Marker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+
+    <main class="container presentacion p-4">
+        <h1>Instrucciones generales</h1>
+
+        <p>Gracias por completar el formulario.</p>
+        <p>A continuación, lee atentamente las instrucciones antes de continuar.</p>
+        <p>Para realizar este experimento, sitúate en una habitación tranquila donde puedas escuchar los audios que van a reproducirse.</p>
+        <p>Recomendamos el uso de auriculares, así como una buena conexión a internet.</p>
+        <p>Ajusta también el brillo de la pantalla a un nivel cómodo, y ponte las gafas o lentillas si usas.</p>
+        <p>Cuando estés listo, pulsa el botón para continuar.</p>
+
+        <!-- CONTINUAR -->
+        <a href="/instrucciones" class="btn btn-dark btn-block">
+            Continuar
+        </a>
+    </main>
+</body>
+</html>
