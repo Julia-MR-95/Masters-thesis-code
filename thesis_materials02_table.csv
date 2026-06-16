@@ -1,0 +1,7 @@
+RELATION,AUDIO_MATERIAL,ID,CORRECT,EXPECTED,INCORRECT
+PROXIMAL,siti.mp3,ITEM01,aquí,aquí,allí
+DISTAL,nuba.mp3,ITEM04,aquel,aquel,este
+DISTAL,baba.mp3,ITEM06,allí,allí,aquí
+PROXIMAL,nibi.mp3,ITEM03,este,este,aquel
+DISTAL,satu.mp3,ITEM02,allí,allí,aquí
+PROXIMAL,pupu.mp3,ITEM05,este,este,aquel

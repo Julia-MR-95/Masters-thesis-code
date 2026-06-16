@@ -1,0 +1,26 @@
+RELATION,AUDIO_MATERIAL,ID,CORRECT,EXPECTED,INCORRECT01,INCORRECT02,INCORRECT03
+PERSONAL,si.mp3,ITEM01,yo,yo,tú,él/ella,vosotros
+PERSONAL,na.mp3,ITEM02,tú,tú,ella/él,yo,ellos
+PERSONAL,bu.mp3,ITEM03,él/ella,él/ella,yo,tú,nosotros
+PERSONAL,sipi.mp3,ITEM04,esto/este,esto/este,aquello,aquí,ahí
+PERSONAL,sapa.mp3,ITEM05,eso/ese,eso/ese,esto/este,aquí,aquel
+PERSONAL,supu.mp3,ITEM06,aquello,aquello,eso/ese,él/ella,tú
+TEMPORAL,siki.mp3,ITEM07,hoy,hoy,mañana,después,pasado mañana
+TEMPORAL,ma.mp3,ITEM08,ayer,ayer,hoy,antes,anteayer
+TEMPORAL,ba.mp3,ITEM09,mañana,mañana,hoy,ayer,luego
+TEMPORAL,mabu.mp3,ITEM10,anteayer,anteayer,hoy,ahora,mañana
+TEMPORAL,babu.mp3,ITEM11,pasado mañana,pasado mañana,mañana,anteayer,pasado mañana
+TEMPORAL,tisi.mp3,ITEM12,ahora,ahora,después,luego,antes
+TEMPORAL,nala.mp3,ITEM13,luego,luego,ahora,antes,después
+TEMPORAL,mubu.mp3,ITEM14,después,después,ahora,antes,luego
+TEMPORAL,pit.mp3,ITEM15,pronto,pronto,tarde,mañana,ayer
+TEMPORAL,bumu.mp3,ITEM16,tarde,tarde,pronto,ayer,mañana
+SPATIAL,siti.mp3,ITEM17,aquí,aquí,allí/allá,este,aquel
+SPATIAL,sata.mp3,ITEM18,ahí,ahí,aquí,eso,esto
+SPATIAL,sutu.mp3,ITEM19,allí/allá,allí/allá,aquí,aquel,este
+MOVEMENT,kiti.mp3,ITEM20,traer,traer,llevar,coger,soltar
+MOVEMENT,kata.mp3,ITEM21,llevar,llevar,traer,soltar,coger
+MOVEMENT,tipi.mp3,ITEM22,subir,subir,bajar,ir,venir
+MOVEMENT,tupu.mp3,ITEM23,bajar,bajar,subir,venir,ir
+MOVEMENT,kipi.mp3,ITEM24,ir,ir,venir,seguir,parar
+MOVEMENT,kapa.mp3,ITEM25,venir,venir,ir,parar,seguir
